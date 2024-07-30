@@ -33,12 +33,78 @@
 
 <body class="manrope">
   <header>
-
+    <nav class="mx-auto container lg:px-24">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
     <!-- banner section  -->
-     
+    <section class="mx-auto container lg:px-24">
+      <div class="carousel w-full relative">
+        <div id="slide1"
+          class="carousel-item relative w-full bg-[url(./images/1.png)] bg-center bg-cover h-[550px] rounded-2xl">
+
+          <div class="absolute left-10 bottom-0 space-x-4 -translate-y-1/2 transform">
+            <a href="#slide2" class="btn btn-circle  text-white">❮</a>
+            <a href="#slide2" class="btn btn-circle text-white">❯</a>
+          </div>
+        </div>
+        <div id="slide2"
+          class="carousel-item relative w-full bg-[url(./images/ban-2.jpeg)] bg-center bg-cover h-[550px]">
+
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div class="absolute left-0 bottom-0 bg-black rounded-2xl p-7">
+          <h3 class="text-white text-2xl font-extrabold mb-3">Meet all the heroes from the field</h3>
+          <p class="w-[502px] text-white/60 text-base font-medium">Join us to celebrate and meet all the heroes from the field who made incredible contributions with their bravery and skills.</p>
+        </div>
+      </div>
+    </section>
     <!-- club section  -->
     <section>
       <div class="mx-auto container lg:px-24 lg:py-24">
@@ -46,13 +112,63 @@
           <div class="w-full border border-dashed border-[#131318]/20"></div>
           <div class="my-7">
             <h2 class="text-center text-[#131318] text-4xl font-extrabold">Professional Hockeys Club</h2>
-            <p class="mx-56 mt-5 text-center text-[#131318] opacity-60 text-base font-medium">The Professional Hockeys Club boasts elite players, thrilling games, and unparalleled dedication, creating unforgettable experiences for fans and athletes alike.</p>
+            <p class="mx-56 mt-5 text-center text-[#131318] opacity-60 text-base font-medium">The Professional Hockeys
+              Club boasts elite players, thrilling games, and unparalleled dedication, creating unforgettable
+              experiences for fans and athletes alike.</p>
           </div>
           <div class="w-full border border-dashed mb-10 border-[#131318]/20"></div>
         </div>
-      <div>
-      
-      </div>
+        <div class="relative mb-28">
+          <div class="flex flex-row justify-evenly relative">
+            <div class="radial-progress text-[#ff4240]" style="--value:87; z-index: 9; --thickness: 11px; --size:7rem;"
+              role="progressbar" data-percent="75"></div>
+            <div class="radial-progress text-[#49d293]" style="--value:87; z-index: 9; --thickness: 11px; --size:7rem;"
+              role="progressbar" data-percent="75"></div>
+            <div class="radial-progress text-[#ffb546]" style="--value:87; z-index: 9; --thickness: 11px; --size:7rem;"
+              role="progressbar" data-percent="75"></div>
+            <div class="radial-progress text-[#4c8df1]" style="--value:87; z-index: 9; --thickness: 11px; --size:7rem;"
+              role="progressbar" data-percent="75"></div>
+
+            <div class="absolute top-0 left-0">
+              <div class="flex flex-row">
+                <div class="radial-progress text-[#E7E7E8] ml-[124.5px]"
+                  style="--value:100; --thickness: 11px; --size:7rem;" role="progressbar" data-percent="75"></div>
+                <div class="radial-progress text-[#E7E7E8] ml-[124.5px]"
+                  style="--value:100; --thickness: 11px; --size:7rem;" role="progressbar" data-percent="75"></div>
+                <div class="radial-progress text-[#E7E7E8] ml-[125px]"
+                  style="--value:100; --thickness: 11px; --size:7rem;" role="progressbar" data-percent="75"></div>
+                <div class="radial-progress text-[#E7E7E8] ml-[124.5px]"
+                  style="--value:100; --thickness: 11px; --size:7rem;" role="progressbar" data-percent="75"></div>
+              </div>
+            </div>
+            <h2 class="text-center text-[#131318] text-[28px] font-extrabold absolute top-[35px] left-[153px]">87%</h2>
+            <h2 class="text-center text-[#131318] text-[28px] font-extrabold absolute top-[35px] left-[390px]">95%</h2>
+            <h2 class="text-center text-[#131318] text-[28px] font-extrabold absolute top-[35px] left-[625px]">90%</h2>
+            <h2 class="text-center text-[#131318] text-[28px] font-extrabold absolute top-[35px] left-[860px]">80%</h2>
+          </div>
+          <div>
+            <div class="absolute top-[130px] left-[80px]">
+              <h4 class="text-center text-[#131318] text-xl font-semibold mb-3">Prayer Facility</h4>
+              <p class="w-[200px] text-center text-[#131318]/60 text-base">Quiet haven for reflection and peace.</p>
+            </div>
+            <div class="absolute top-[130px] left-[320px]">
+              <h4 class="text-center text-[#131318] text-xl font-semibold mb-3">Experienced Coach</h4>
+              <p class="w-[200px] text-center text-[#131318]/60 text-base">Guiding athletes to success every day.</p>
+            </div>
+            <div class="absolute top-[130px] left-[555px]">
+              <h4 class="text-center text-[#131318] text-xl font-semibold mb-3">Senior Player</h4>
+              <p class="w-[200px] text-center text-[#131318]/60 text-base">Experienced veteran leads team with skillful
+                play.</p>
+            </div>
+            <div class="absolute top-[130px] left-[790px]">
+              <h4 class="text-center text-[#131318] text-xl font-semibold mb-3">Training Ground</h4>
+              <p class="w-[200px] text-center text-[#131318]/60 text-base">Practice space for honing essential skills.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
       </div>
     </section>
     <!-- program section  -->
@@ -63,30 +179,59 @@
             <div class="w-full border border-dashed border-[#131318]/20"></div>
             <div class="my-7">
               <h2 class="text-center text-[#131318] text-4xl font-extrabold">Program Sections</h2>
-              <p class="mx-56 mt-5 text-center text-[#131318] opacity-60 text-base font-medium">Program sections break down a curriculum into manageable parts, ensuring each segment focuses on specific topics for comprehensive learning.</p>
+              <p class="mx-56 mt-5 text-center text-[#131318] opacity-60 text-base font-medium">Program sections break
+                down a curriculum into manageable parts, ensuring each segment focuses on specific topics for
+                comprehensive learning.</p>
             </div>
             <div class="w-full border border-dashed mb-10 border-[#131318]/20"></div>
           </div>
+
+          <!-- grid  -->
           <div class="grid lg:grid-cols-2 grid-cols-1 gap-5">
-            <div class="items-center justify-center text-center bg-[url('./images/2.png')]">
-            
-              <h2 class="text-white text-[28px] font-extrabold">Junior Program</h2>
-              <p class="text-white w-[195px] font-medium text-base">The training ground buzzed with anticipation as
-                athletes honed their skills.</p>
-              <button class="btn text-white bg-red-500 border-none">Register Now</button>
+            <div class="col-span-1">
+              <div class="relative">
+                <img src="./images/2.png" class="w-full h-full object-cover" alt="Your Image Description">
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-black to-black opacity-50 rounded-2xl">
+                </div>
+                <div class="absolute top-20 left-0 p-5">
+                  <h2 class="text-white text-[28px] font-extrabold">Junior Program</h2>
+                  <p class="text-white font-medium text-base w-[500px] mt-2 mb-4">The Junior Program offers young
+                    learners
+                    engaging, hands-on experiences to develop essential skills, fostering creativity, teamwork, and
+                    critical thinking.</p>
+                  <button class="btn text-white bg-red-500 border-none">Register Now</button>
+                </div>
+              </div>
             </div>
-            <div class="items-center justify-center text-center bg-[url('./images/3.png')] p-[109px]">
-              <h2 class="text-white text-[28px] font-extrabold">Teenager Program</h2>
-              <p class="text-white w-[195px] font-medium text-base">Empowering teens with skills, knowledge, and
-                confidence for bright futures.</p>
-              <button class="btn text-white bg-red-500 border-none">Register Now</button>
+            <div class="col-span-1">
+              <div class="relative">
+                <img src="./images/3.png" class="w-full h-full object-cover" alt="Your Image Description">
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-black to-black opacity-50 rounded-2xl">
+                </div>
+                <div class="absolute top-20 left-0 p-5">
+                  <h2 class="text-white text-[28px] font-extrabold">Teenager Program</h2>
+                  <p class="text-white font-medium text-base w-[500px] mt-2 mb-4">The Teenager Program engages young
+                    minds with dynamic activities, fostering personal growth, creativity, and teamwork for a brighter
+                    future.</p>
+                  <button class="btn text-white bg-red-500 border-none">Register Now</button>
+                </div>
+              </div>
             </div>
-            <div class="col-span-2 items-center justify-center text-center bg-[url('./images/4.png')] p-[189px]">
-              <h2 class="text-white text-[28px] font-extrabold">Professional Program</h2>
-              <p class="text-white w-[195px] font-medium text-base">Empowering careers with industry-relevant skills
-                through our Professional Program.</p>
-              <button class="btn text-white bg-red-500 border-none">Register Now</button>
+            <div class="col-span-2">
+              <div class="relative">
+                <img src="./images/4.png" class="w-full h-full object-cover" alt="Your Image Description">
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-black to-black opacity-50 rounded-2xl">
+                </div>
+                <div class="absolute top-20 left-0 p-5">
+                  <h2 class="text-white text-[28px] font-extrabold">Professional Program</h2>
+                  <p class="text-white font-medium text-base w-[500px] mt-2 mb-4">The Professional Program offers
+                    advanced training, enhancing expertise and leadership skills, preparing participants for high-level
+                    careers and industry challenges.</p>
+                  <button class="btn text-white bg-red-500 border-none">Register Now</button>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -123,7 +268,8 @@
                   </div>
                   <div class="flex flex-col gap-1">
                     <h3 class="text-[#131318] text-xl font-extrabold">T-Shirt For Hockeys</h3>
-                    <p class="text-[#131318]/60 text-base font-medium">Get your perfect T-shirt for hockey fans, stylish and comfortable!</p>
+                    <p class="text-[#131318]/60 text-base font-medium">Get your perfect T-shirt for hockey fans, stylish
+                      and comfortable!</p>
                   </div>
                   <div class="flex flex-row gap-2">
                     <h4 class="text-[#ff4240] text-lg font-extrabold">Price - $35.00</h4>
@@ -147,7 +293,8 @@
                   </div>
                   <div class="flex flex-col gap-1">
                     <h3 class="text-[#131318] text-xl font-extrabold">Green Football</h3>
-                    <p class="text-[#131318]/60 text-base font-medium">Green footballs are commonly used in large conditions for visibility.</p>
+                    <p class="text-[#131318]/60 text-base font-medium">Green footballs are commonly used in large
+                      conditions for visibility.</p>
                   </div>
                   <div class="flex flex-row gap-2">
                     <h4 class="text-[#ff4240] text-lg font-extrabold">Price - $25.00</h4>
@@ -171,7 +318,8 @@
                   </div>
                   <div class="flex flex-col gap-1">
                     <h3 class="text-[#131318] text-xl font-extrabold">Cap For Hockeys</h3>
-                    <p class="text-[#131318]/60 text-base font-medium">Essential gear for optimal protection and performance.</p>
+                    <p class="text-[#131318]/60 text-base font-medium">Essential gear for optimal protection and
+                      performance.</p>
                   </div>
                   <div class="flex flex-row gap-2">
                     <h4 class="text-[#ff4240] text-lg font-extrabold">Price - $10.00</h4>
@@ -195,7 +343,8 @@
                   </div>
                   <div class="flex flex-col gap-1">
                     <h3 class="text-[#131318] text-xl font-extrabold">T-Shirt For Football</h3>
-                    <p class="text-[#131318]/60 text-base font-medium">Score big with our stylish and comfortable football T-shirts</p>
+                    <p class="text-[#131318]/60 text-base font-medium">Score big with our stylish and comfortable
+                      football T-shirts</p>
                   </div>
                   <div class="flex flex-row gap-2">
                     <h4 class="text-[#ff4240] text-lg font-extrabold">Price - $21.00</h4>
@@ -219,7 +368,8 @@
                   </div>
                   <div class="flex flex-col gap-1">
                     <h3 class="text-[#131318] text-xl font-extrabold">Cap For Cricket</h3>
-                    <p class="text-[#131318]/60 text-base font-medium">Cricket caps shield players' eyes from the sun, enhancing performance.</p>
+                    <p class="text-[#131318]/60 text-base font-medium">Cricket caps shield players' eyes from the sun,
+                      enhancing performance.</p>
                   </div>
                   <div class="flex flex-row gap-2">
                     <h4 class="text-[#ff4240] text-lg font-extrabold">Price - $40.00</h4>
@@ -243,7 +393,8 @@
                   </div>
                   <div class="flex flex-col gap-1">
                     <h3 class="text-[#131318] text-xl font-extrabold">White Football</h3>
-                    <p class="text-[#131318]/60 text-base font-medium">White footballs are commonly used in snowy conditions for visibility.</p>
+                    <p class="text-[#131318]/60 text-base font-medium">White footballs are commonly used in snowy
+                      conditions for visibility.</p>
                   </div>
                   <div class="flex flex-row gap-2">
                     <h4 class="text-[#ff4240] text-lg font-extrabold">Price - $30.00</h4>
